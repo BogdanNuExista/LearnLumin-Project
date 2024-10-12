@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnLumin.Presentation", "LearnLumin.Presentation\LearnLumin.Presentation.csproj", "{E8D3C43E-47E1-4AB7-AE76-32D8D3728B37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnLumin.BLL", "LearnLumin.BLL\LearnLumin.BLL.csproj", "{22AD973C-85B2-41FB-BA9E-CF861C0FC782}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnLumin.DAL", "LearnLumin.DAL\LearnLumin.DAL.csproj", "{4235AACA-0004-430D-92EB-7940C8837A4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8D3C43E-47E1-4AB7-AE76-32D8D3728B37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D3C43E-47E1-4AB7-AE76-32D8D3728B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8D3C43E-47E1-4AB7-AE76-32D8D3728B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D3C43E-47E1-4AB7-AE76-32D8D3728B37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22AD973C-85B2-41FB-BA9E-CF861C0FC782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22AD973C-85B2-41FB-BA9E-CF861C0FC782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22AD973C-85B2-41FB-BA9E-CF861C0FC782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22AD973C-85B2-41FB-BA9E-CF861C0FC782}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4235AACA-0004-430D-92EB-7940C8837A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4235AACA-0004-430D-92EB-7940C8837A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4235AACA-0004-430D-92EB-7940C8837A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4235AACA-0004-430D-92EB-7940C8837A4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

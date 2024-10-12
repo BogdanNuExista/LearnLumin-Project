@@ -1,0 +1,6 @@
+@LearnLumin.Presentation_HostAddress = http://localhost:5101
+
+GET {{LearnLumin.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

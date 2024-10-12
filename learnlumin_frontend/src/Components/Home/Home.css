@@ -1,0 +1,152 @@
+/* Home.css */
+
+/* Background Image */
+.background-image {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(../../../public/assets/learn.jpg) center center;
+  background-size: cover;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+}
+
+/* Home Container */
+.home-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  color: #fff;
+}
+
+/* Header */
+.header {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  animation: fadeInSplash 0.8s ease-in-out forwards; /* Faster splash effect */
+}
+
+/* Header and Subtext Styles */
+.main-header, .subtext {
+  font-weight: 900;
+  color: #6a1b9a;
+  opacity: 0;
+  transform: scale(0.9); /* Slightly smaller to avoid initial stretching */
+  animation: splashEffect 0.8s ease-in-out forwards; /* Faster splash effect */
+}
+
+/* Specific styles for main-header and subtext */
+.main-header {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.subtext {
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin-top: 1rem;
+}
+
+/* Splash Effect Animation */
+@keyframes splashEffect {
+  0% {
+      opacity: 0;
+      transform: scale(0.9); /* Start slightly smaller to avoid initial stretching */
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1); /* Normal size */
+  }
+}
+
+/* Auth Buttons */
+.auth-buttons {
+  margin-top: 4rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out 0.5s forwards; /* Fast appearance after header and subtext */
+}
+
+.auth-button:hover {
+  background-color: #53217a; /* Slightly darker shade for hover */
+}
+
+/* Info Cards */
+/* Info Cards Grid */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); /* Increase the minimum size of cards */
+  gap: 2rem; /* Increase the gap between cards */
+  padding: 2.5rem; /* Add more padding to the container */
+  width: 100%;
+  max-width: 1400px; /* Increase max width for the container */
+  margin-top: 2.5rem; /* More margin from the top */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition */
+}
+
+/* Individual Feature Card */
+.feature-card {
+  position: relative;
+  border-radius: 8px;
+  padding: 1.5rem; /* Add padding inside the card for content spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border: 2px solid #6a1b9a;
+  height: auto; /* Allow the card to expand based on content */
+  background-color: #ffffff;
+}
+
+/* Feature Card Content */
+.feature-card-content {
+  position: relative;
+  z-index: 2; /* Above the background */
+  border-radius: inherit; /* Ensure the border radius matches the card */
+  color: #6a1b9a;
+}
+
+/* Feature Card Title */
+.feature-card-title {
+  font-size: 1.75rem; /* Larger text */
+  font-weight: bolder; /* Bolder text */
+  margin-bottom: 0.75rem; /* More spacing below the title */
+  color: inherit; /* Inherit color from parent */
+}
+
+/* Feature Card Description */
+.feature-card-description {
+  font-size: 1.2rem; /* Larger text */
+  color: inherit; /* Inherit color from parent */
+}
+
+/* Zoom Effect on Hover */
+.feature-card:hover {
+  transform: scale(1.08); /* Slightly larger scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Scroll-triggered visibility */
+.features.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
